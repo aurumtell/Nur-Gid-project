@@ -1,0 +1,210 @@
+<!doctype html><!-- 
+file:///home/odmin/Doc/%D0%94%D0%B0%D1%8F%D0%BD%D1%87%D0%B8%D0%BA)/html/project/index.html -->
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css?family=Mr+Dafoe&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Candal|Paytone+One&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href='./css/main.css'>
+
+    <link rel="stylesheet"  href="./js/main.js">
+
+    <script src="https://kit.fontawesome.com/bf4ca4202e.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Fascinate&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Darker+Grotesque&display=swap" rel="stylesheet"> 
+
+    <title>Nur-Sultan project</title>
+  </head>
+
+
+
+<body onload="getArray()">
+  <!-- navbar -->
+    <!-- <div class="container-fluid info p-3" id="top-icons">
+      <div class="row">
+        <div class="col d-flex justify-content-between align-items-baseline flex-wrap">
+          <div class="info-icons p-2">
+
+            <a href="#" class="mr-2 primary-color"><i class="fab fa-facebook fa-2x"></i></a>
+
+            <a href="#" class="mr-2 primary-color"><i class="fab fa-instagram fa-2x"></i></a>
+
+            <a href="#" class="mr-2 primary-color"><i class="fab fa-twitter fa-2x"></i></a>
+
+          </div>
+          <h1><i class='fas fa-map-marker-alt icon-color'></i><span class='title text-uppercase'>Nur-gis</span></h1>
+
+        </div>
+      </div> -->
+   
+<!-- end of navbar -->
+<!-- navbar -->
+  <nav class="navbar navbar-expand-lg info">
+    <button class="navbar-toggler" type="button" data-toggle='collapse' data-target='#myNavbar'>
+      <div class="toggler-btn">
+        <div class="bar bar1"></div>
+        <div class="bar bar2"></div>
+        <div class="bar bar3"></div>
+      </div>
+    </button>
+
+    <!-- links -->
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <div class="col d-flex justify-content-between align-items-baseline flex-wrap">
+          <div class="info-icons p-2">
+
+            <a href="#" class="mr-2 primary-color"><i class="fab fa-facebook fa-2x"></i></a>
+
+            <a href="#" class="mr-2 primary-color"><i class="fab fa-instagram fa-2x"></i></a>
+
+            <a href="#" class="mr-2 primary-color"><i class="fab fa-twitter fa-2x"></i></a>
+            
+
+            <a href="#" class="mr-2 ">RU</a>
+            <a href="#" class="mr-2 ">KZ</a>
+
+          </div>
+          
+
+        
+
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item">
+          <a href="" onclick="clickChildren()" class="nav-link text-capitalize">CHILDREN</a>
+        </li>
+        <li class="nav-item">
+          <a href="#adults" onclick="clickAdults()" class="nav-link text-capitalize">ADULTS</a>
+        </li>
+        <li class="nav-item">
+          <a href="#elderly" onclick="clickElderly()" class="nav-link text-capitalize">FAMILY</a>
+        </li>
+      </ul>
+    <h1><i class='fas fa-map-marker-alt icon-color'></i><span class='title text-uppercase'>Nur-gid</span></h1>
+    </div>
+  </nav>
+</div>
+</div>
+</nav>
+<!-- end of navbar -->
+
+<!-- header section -->
+
+  <header id="header">
+    <div class='container'>
+      <div class="row height-90 align-items-center justify-content-center">
+        <div class="col">
+          <div class='banner text-center'>
+            <h1 class='display-1 text-capitalize w-50 mx-auto'>
+              <small class='primary-color1'>NUR</small>
+              <small class='primary-color1'>GID</small>
+            </h1>
+            <a href='#children' class='primary-color1 btn main-btn nur-btn my-4 text-capitalize '>Let's go!</a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <a href='#children' class='btn header-link primary-color'>
+      <i class='fas fa-arrow-down'></i>
+    </a>
+  </header>
+
+<!-- end of header section -->
+
+<!-- card section -->
+<section id="children" class="py-5" >
+  <h1 class='primary-color' align='center'>Children</h1>
+    <div class="container">
+      <div class="row cardschild">
+      </div>
+    <div class='div-btn'>
+    <div onclick="clickChildren()" href='' class='primary-color btn card-btn my-4 text-capitalize align-items-center'>more</div>
+  </div>
+  </section>
+<!-- end of cards section -->
+
+<!-- card section -->
+<section id="adults" class="py-5">
+    <div class="container">
+      <h1 class='primary-color' align='center'>Adults</h1>
+      <div class="row cardsadults">
+       </div> 
+    <div class='div-btn'>
+      <div onclick="clickAdults()" href='' class='primary-color btn card-btn my-4 text-capitalize'>more</div>
+    </div>
+  </section>
+<!-- end of cards section -->
+
+<!-- card section -->
+<section id="elderly" class="py-5">
+    <div class="container">
+      <h1 class='primary-color' align='center'>Family</h1>
+      <div class="row cardselderly">
+      </div>
+
+
+    
+    <div class='div-btn'>
+    <div onclick="clickElderly()" href='' class='primary-color btn card-btn my-4 text-capitalize align-items-center'>more</div>
+  </div>
+  </section>
+<!-- end of cards section -->
+
+  <!-- 
+   -->
+<!-- end of contact section -->
+
+<!-- footer -->
+<footer>
+  <div class='container'>
+    <div class='row'>
+      <div class='col md-4 three_clo'>
+        <h4>NUR GID</h4>
+        <p>Write to us</p>
+        <form>
+          <input type='email' placeholder="">
+          <button class='btn1'>
+            <i class='fas fa-envelope-open'></i>
+          </button>
+        </form>
+      </div>
+      <div class='col-md-4 mld-row'>
+        <h4>Follow Us</h4>
+        
+        <div class='social-icons'>
+          <a href='#'><i class='fa fa-facebook-f'></i></a>
+          <a href='#'><i class='fab fa-twitter'></i></a>
+          <a href='#'><i class='fab fa-google-plus-g'></i></a>
+        </div>
+      </div>
+      <div class='col-md-4 contact'>
+        <h4>Contact us</h4>
+        <p><i class='fas fa-map-marker-alt'>fghjkjhgfhjkhv</i><span class='number'>8525825</span></p>
+        <a><i class="fa fa-phone" aria-hidden="true">call us</i><span class='umber'>8653256</span></a>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/6.5.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.5.0/firebase-firestore.js"></script>
+    <!-- js -->
+    <script src='js/main.js'></script>
+    <!-- magnific-popup -->
+    <script src='magnific-popup/jquery.magnific-popup.min.js'></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  </body>
+</html>
